@@ -47,7 +47,7 @@
     cookie     : true,  // enable cookies to allow the server to access 
                         // the session
     xfbml      : true,  // parse social plugins on this page
-    version    : 'v2.3' // use version 2.2
+    version    : 'v2.4' // use version 2.2
   });
 
   // Now that we've initialized the JavaScript SDK, we call 
@@ -146,8 +146,14 @@
 				
 				<a data-role ="button" data-rel="popup" href="#popupRegister"> Register </a>	
 			<center><a href="#popupSkip" data-rel="popup">Skip Login</a>
-			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-			</fb:login-button>
+			<div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div>
+			<!--
+			<div
+			  class="fb-like"
+			  data-share="true"
+			  data-width="450"
+			  data-show-faces="true">
+			</div>-->
 			</div><!-- End of Content -->
 			
 			<!-- popup Register -->
@@ -286,5 +292,7 @@
 			</div>
 		</div>
 		<!-- =========================================End of history page=========================================================-->
+
+
 	</body>
 </html>
